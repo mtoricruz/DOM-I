@@ -87,28 +87,48 @@ ctaButton.textContent = siteContent.cta.button;
 
 // Main-Content Top-Content
 
-const topContentHeaderOne = document.querySelector('text-content h4');
-topContentHeaderOne.textContent = siteContent["main-content"]["features-h4"];
+const topContentHeaderOne = document.querySelector('section.main-content > div.top-content > div:nth-child(1) > h4');
+topContentHeaderOne.textContent = siteContent['main-content']["features-h4"];
 
-const topContentTextOne = document.querySelector('p');
+const topContentTextOne = document.querySelector('section.main-content > div.top-content > div:nth-child(1) > p');
 topContentTextOne.textContent = siteContent["main-content"]["features-content"];
 
-const mainContentHeaderTwo = document.querySelector('text-content h4:nth-child(2)');
-mainContentHeaderTwo.textContent = siteContent["main-content"]["about-h4"];
+const mainContentHeaderTwo = document.querySelector('section.main-content > div.top-content > div:nth-child(2) > h4');
+mainContentHeaderTwo.textContent = siteContent['main-content']["about-h4"];
 
-const mainContentTextTwo = document.querySelector('p');
+const mainContentTextTwo = document.querySelector('section.main-content > div.top-content > div:nth-child(2) > p');
 mainContentTextTwo.textContent = siteContent["main-content"]["about-content"];
 
 // Main-Content Bottom-Content
 
-// const mainContentHeaderThree = document.querySelector('h4')
-// mainContentHeaderThree.textContent = siteContent["main-content"]["services-h4"]
+const mainContentHeaderThree = document.querySelector('section.main-content > div.bottom-content > div:nth-child(1) > h4')
+mainContentHeaderThree.textContent = siteContent["main-content"]["services-h4"]
+
+const mainContentTextThree = document.querySelector('section.main-content > div.bottom-content > div:nth-child(1) > p')
+mainContentTextThree.textContent = siteContent["main-content"]["services-content"]
+
+const mainContentHeaderFour = document.querySelector('section.main-content > div.bottom-content > div:nth-child(2) > h4')
+mainContentHeaderFour.textContent = siteContent["main-content"]["product-h4"]
+
+const mainContentTextFour = document.querySelector('section.main-content > div.bottom-content > div:nth-child(2) > p')
+mainContentTextFour.textContent = siteContent["main-content"]["product-content"]
+
+const mainContentHeaderFive = document.querySelector('section.main-content > div.bottom-content > div:nth-child(3) > h4')
+mainContentHeaderFive.textContent = siteContent["main-content"]["vision-h4"]
+
+const mainContentTextFive = document.querySelector('section.main-content > div.bottom-content > div:nth-child(3) > p')
+mainContentTextFive.textContent = siteContent["main-content"]["vision-content"]
 
 
 // Contact Section
 
-// const contactHeader = document.querySelector('.contact.h4')
-// contactHeader.textContent = siteContent.contact['contact-h4']
+const contactHeader = document.querySelector('section.contact > h4')
+contactHeader.textContent = siteContent.contact['contact-h4']
+
+const contactAddress = document.querySelector('section.contact > p')
+contactAddress.textContent = siteContent.contact['address']
+
+
 
 
 
