@@ -121,15 +121,23 @@ mainContentTextFive.textContent = siteContent["main-content"]["vision-content"]
 
 
 // Contact Section
+const contact = document.querySelector('.contact')
+const contactChildren = contact.children
 
-const contactHeader = document.querySelector('section.contact > h4')
-contactHeader.textContent = siteContent.contact['contact-h4']
+// const contactHeader = document.querySelector('section.contact > h4')
+// contactHeader.textContent = siteContent.contact['contact-h4']
 
-const contactAddress = document.querySelector('section.contact > p')
-contactAddress.textContent = siteContent.contact['address']
+// const contactAddress = document.querySelector('section.contact > p')
+// contactAddress.textContent = siteContent.contact['address']
 
+contactChildren[0].textContent = siteContent.contact['contact-h4']
+contactChildren[1].textContent = siteContent.contact['address']
+contactChildren[2].textContent = siteContent.contact['phone']
+contactChildren[3].textContent = siteContent.contact['email']
 
+// Footer Section
 
-
+const footerLine = document.querySelector('footer')
+footerLine.textContent = siteContent['footer']['copyright']
 
 // debugger
